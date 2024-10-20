@@ -1,0 +1,7 @@
+<h1>Dog Breed Prediction</h1>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="dog_image">Upload an image of the dog:</label><br><br>
+    <input type="file" name="dog_image" accept="image/*"><br><br>
+    <button type="submit">Predict</button>
+</form>
